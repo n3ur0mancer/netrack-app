@@ -1,0 +1,18 @@
+.header-main-flex-container {
+  display: flex;
+  color: #262626;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3vh 5ch 0vh 5ch;
+}
+.header-title {
+  font-size: 1.8rem;
+}
+.header-list-flex-container {
+  display: flex;
+  list-style: none;
+}
+.header-list-flex-container li {
+  margin-left: 3vw;
+  color: #7c7c7c;
+}

@@ -9,9 +9,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 90vh;
+  height: 83vh;
   grid-gap: 2ch;
-  margin: 5vh 5ch 5vh 5ch;
+  margin: 3vh 5ch 5vh 5ch;
 }
 .dashboard-big-square-grid-container {
   grid-column: 1/3;
