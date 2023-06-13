@@ -1,0 +1,37 @@
+[
+    {
+      "currency": "EUR",
+      "values": [
+        { "month": "January", "year": 2022, "value": 1.12 },
+        { "month": "February", "year": 2022, "value": 1.14 },
+        { "month": "March", "year": 2022, "value": 1.15 },
+        { "month": "April", "year": 2022, "value": 1.18 },
+        { "month": "May", "year": 2022, "value": 1.20 },
+        { "month": "June", "year": 2022, "value": 1.22 },
+        { "month": "July", "year": 2022, "value": 1.25 },
+        { "month": "August", "year": 2022, "value": 1.23 },
+        { "month": "September", "year": 2022, "value": 1.21 },
+        { "month": "October", "year": 2022, "value": 1.19 },
+        { "month": "November", "year": 2022, "value": 1.17 },
+        { "month": "December", "year": 2022, "value": 1.16 }
+      ]
+    },
+    {
+      "currency": "USD",
+      "values": [
+        { "month": "January", "year": 2022, "value": 1.02 },
+        { "month": "February", "year": 2022, "value": 1.04 },
+        { "month": "March", "year": 2022, "value": 1.06 },
+        { "month": "April", "year": 2022, "value": 1.08 },
+        { "month": "May", "year": 2022, "value": 1.10 },
+        { "month": "June", "year": 2022, "value": 1.12 },
+        { "month": "July", "year": 2022, "value": 1.15 },
+        { "month": "August", "year": 2022, "value": 1.13 },
+        { "month": "September", "year": 2022, "value": 1.11 },
+        { "month": "October", "year": 2022, "value": 1.09 },
+        { "month": "November", "year": 2022, "value": 1.07 },
+        { "month": "December", "year": 2022, "value": 1.06 }
+      ]
+    }
+  ]
+  
