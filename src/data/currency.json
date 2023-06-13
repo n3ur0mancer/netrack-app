@@ -2,20 +2,21 @@
     {
       "currency": "EUR",
       "values": [
-        { "month": "January", "year": 2022, "value": 1.12 },
-        { "month": "February", "year": 2022, "value": 1.14 },
-        { "month": "March", "year": 2022, "value": 1.15 },
-        { "month": "April", "year": 2022, "value": 1.18 },
-        { "month": "May", "year": 2022, "value": 1.20 },
-        { "month": "June", "year": 2022, "value": 1.22 },
-        { "month": "July", "year": 2022, "value": 1.25 },
-        { "month": "August", "year": 2022, "value": 1.23 },
-        { "month": "September", "year": 2022, "value": 1.21 },
-        { "month": "October", "year": 2022, "value": 1.19 },
-        { "month": "November", "year": 2022, "value": 1.17 },
-        { "month": "December", "year": 2022, "value": 1.16 }
+        { "month": "August", "year": 2022, "value": 20302 },
+        { "month": "September", "year": 2022, "value": 21541 },
+        { "month": "October", "year": 2022, "value": 22784 },
+        { "month": "November", "year": 2022, "value": 23897 },
+        { "month": "December", "year": 2022, "value": 25317 },
+        { "month": "January", "year": 2023, "value": 26953 },
+        { "month": "February", "year": 2023, "value": 28203 },
+        { "month": "March", "year": 2023, "value": 30134 },
+        { "month": "April", "year": 2023, "value": 31400 },
+        { "month": "May", "year": 2023, "value": 29748 },
+        { "month": "June", "year": 2023, "value": 26340 },
+        { "month": "July", "year": 2023, "value": 25534 }
       ]
     },
+
     {
       "currency": "USD",
       "values": [

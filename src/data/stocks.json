@@ -1,0 +1,20 @@
+[
+    {
+      "stock": "example",
+      "values": [
+        { "month": "August", "year": 2022, "value": 26419.25 },
+        { "month": "September", "year": 2022, "value": 26918.75 },
+        { "month": "October", "year": 2022, "value": 26265.00 },
+        { "month": "November", "year": 2022, "value": 25074.75 },
+        { "month": "December", "year": 2022, "value": 25788.75 },
+        { "month": "January", "year": 2023, "value": 25479.00 },
+        { "month": "February", "year": 2023, "value": 25095.75 },
+        { "month": "March", "year": 2023, "value": 25422.75 },
+        { "month": "April", "year": 2023, "value": 24867.50 },
+        { "month": "May", "year": 2023, "value": 25330.25 },
+        { "month": "June", "year": 2023, "value": 25295.50 },
+        { "month": "July", "year": 2023, "value": 25934.25 }
+      ]
+    }
+  ]
+  

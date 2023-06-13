@@ -4,7 +4,13 @@ import Header from "../components/Header/Header";
 import "@fontsource/hanken-grotesk";
 import "./Dashboard.css";
 
+import currencyData from "../data/currency.json";
+import stocksData from "../data/stocks.json";
+
 function Dashboard() {
+  const eurData = currencyData.find((currency) => currency.currency === "EUR");
+  const stockData = stocksData.find((stock) => stock.stock === "example");
+
   return (
     <div className="dashboard-main-container">
       <Header />
@@ -13,18 +19,28 @@ function Dashboard() {
           <Plot
             data={[
               {
-                name: "Cash",
+                name: "Currency",
                 type: "scatter",
-                x: [1, 2, 3, 4, 5, 6],
-                y: [30134, 31400, 30532, 29748, 26340, 25534],
-                marker: { color: "white" },
+                mode: "lines+markers",
+                line: {
+                  shape: "spline",
+                  width: 3,
+                },
+                x: eurData.values.map((entry) => entry.month),
+                y: eurData.values.map((entry) => entry.value),
+                marker: { color: "white", size: 10 },
               },
               {
                 name: "Stocks",
                 type: "scatter",
-                x: [1, 2, 3, 4, 5, 6],
-                y: [19643.36, 20044.8, 20268, 20381.4, 20692.6, 21034.2],
-                marker: { color: "white" },
+                mode: "lines+markers",
+                line: {
+                  shape: "spline",
+                  width: 3,
+                },
+                x: stockData.values.map((entry) => entry.month),
+                y: stockData.values.map((entry) => entry.value),
+                marker: { color: "white", size: 10 },
               },
             ]}
             style={{ width: "100%", height: "100%" }}
@@ -47,7 +63,8 @@ function Dashboard() {
                   amily: "Hanken Grotesk",
                   color: "white",
                 },
-                showgrid: false,
+                gridcolor: "#3f3f3f",
+                gridwidth: 1,
               },
               xaxis: {
                 tickfont: {
@@ -70,6 +87,10 @@ function Dashboard() {
               {
                 name: "Placeholder",
                 type: "scatter",
+                mode: "lines+markers",
+                line: {
+                  shape: "spline", // Set the line shape to "spline" for smooth curve
+                },
                 x: [1, 2, 3, 4, 5, 6],
                 y: [30134, 31400, 30532, 29748, 26340, 25534],
                 marker: { color: "#262626" },
@@ -111,6 +132,10 @@ function Dashboard() {
               {
                 name: "Losing",
                 type: "scatter",
+                mode: "lines+markers",
+                line: {
+                  shape: "spline", // Set the line shape to "spline" for smooth curve
+                },
                 x: [1, 2, 3, 4, 5, 6],
                 y: [30134, 31400, 30532, 29748, 26340, 25534],
                 marker: { color: "white" },
@@ -154,6 +179,10 @@ function Dashboard() {
               {
                 name: "Winning",
                 type: "scatter",
+                mode: "lines+markers",
+                line: {
+                  shape: "spline", // Set the line shape to "spline" for smooth curve
+                },
                 x: [1, 2, 3, 4, 5, 6],
                 y: [19643.36, 20044.8, 20268, 20381.4, 20692.6, 21034.2],
                 marker: { color: "#262626" },
