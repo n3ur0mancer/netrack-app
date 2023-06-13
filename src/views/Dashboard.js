@@ -77,7 +77,7 @@ function Dashboard() {
   const normalizedGoldDifference = normalize(goldDifference);
   const normalizedWatchesDifference = normalize(watchesDifference);
 
-  let bestData, worstData;
+  let bestData, worstData, bestDataName, worstDataName;
 
   if (
     normalizedEurDifference >= normalizedStockDifference &&
@@ -85,20 +85,24 @@ function Dashboard() {
     normalizedEurDifference >= normalizedWatchesDifference
   ) {
     bestData = eurData;
+    bestDataName = "Currencies";
   } else if (
     normalizedStockDifference >= normalizedEurDifference &&
     normalizedStockDifference >= normalizedGoldDifference &&
     normalizedStockDifference >= normalizedWatchesDifference
   ) {
     bestData = stockData;
+    bestDataName = "Stocks";
   } else if (
     normalizedGoldDifference >= normalizedEurDifference &&
     normalizedGoldDifference >= normalizedStockDifference &&
     normalizedGoldDifference >= normalizedWatchesDifference
   ) {
     bestData = goldData;
+    bestDataName = "Commodities";
   } else {
     bestData = watchesData;
+    bestDataName = "Tangible assets";
   }
 
   if (
@@ -107,20 +111,24 @@ function Dashboard() {
     normalizedEurDifference <= normalizedWatchesDifference
   ) {
     worstData = eurData;
+    worstDataName = "Currencies";
   } else if (
     normalizedStockDifference <= normalizedEurDifference &&
     normalizedStockDifference <= normalizedGoldDifference &&
     normalizedStockDifference <= normalizedWatchesDifference
   ) {
     worstData = stockData;
+    worstDataName = "Stocks";
   } else if (
     normalizedGoldDifference <= normalizedEurDifference &&
     normalizedGoldDifference <= normalizedStockDifference &&
     normalizedGoldDifference <= normalizedWatchesDifference
   ) {
     worstData = goldData;
+    worstDataName = "Commodities";
   } else {
     worstData = watchesData;
+    worstDataName = "Tangible assets";
   }
 
   // States
@@ -140,7 +148,7 @@ function Dashboard() {
           <Plot
             data={[
               {
-                name: "Currency",
+                name: "",
                 type: "scatter",
                 mode: "lines+markers",
                 line: {
@@ -149,10 +157,19 @@ function Dashboard() {
                 },
                 x: eurData.values.map((entry) => entry.date),
                 y: eurData.values.map((entry) => entry.value),
-                marker: { color: "#00CB7A", size: 10 },
+                marker: {
+                  color: "#00CB7A",
+                  size: 10,
+                  hoverlabel: {
+                    font: {
+                      family: "Hanken Grotesk",
+                    },
+                  },
+                },
+                hovertemplate: "<b>Currency</b><br>%{y:,.0f} €<br>%{x|%b, %Y}",
               },
               {
-                name: "Stocks",
+                name: "",
                 type: "scatter",
                 mode: "lines+markers",
                 line: {
@@ -161,10 +178,19 @@ function Dashboard() {
                 },
                 x: stockData.values.map((entry) => entry.date),
                 y: stockData.values.map((entry) => entry.value),
-                marker: { color: "#C0EB1F", size: 10 },
+                marker: {
+                  color: "#C0EB1F",
+                  size: 10,
+                  hoverlabel: {
+                    font: {
+                      family: "Hanken Grotesk",
+                    },
+                  },
+                },
+                hovertemplate: "<b>Stocks</b><br>%{y:,.0f} €<br>%{x|%b, %Y}",
               },
               {
-                name: "Commodities",
+                name: "",
                 type: "scatter",
                 mode: "lines+markers",
                 line: {
@@ -173,10 +199,20 @@ function Dashboard() {
                 },
                 x: goldData.values.map((entry) => entry.date),
                 y: goldData.values.map((entry) => entry.value),
-                marker: { color: "#E9D0CF", size: 10 },
+                marker: {
+                  color: "#E9D0CF",
+                  size: 10,
+                  hoverlabel: {
+                    font: {
+                      family: "Hanken Grotesk",
+                    },
+                  },
+                },
+                hovertemplate:
+                  "<b>Commodities</b><br>%{y:,.0f} €<br>%{x|%b, %Y}",
               },
               {
-                name: "Tangible assets",
+                name: "",
                 type: "scatter",
                 mode: "lines+markers",
                 line: {
@@ -185,7 +221,17 @@ function Dashboard() {
                 },
                 x: watchesData.values.map((entry) => entry.date),
                 y: watchesData.values.map((entry) => entry.value),
-                marker: { color: "#BDAFE8", size: 10 },
+                marker: {
+                  color: "#BDAFE8",
+                  size: 10,
+                  hoverlabel: {
+                    font: {
+                      family: "Hanken Grotesk",
+                    },
+                  },
+                },
+                hovertemplate:
+                  "<b>Tangible assets</b><br>%{y:,.0f} €<br>%{x|%b, %Y}",
               },
             ]}
             style={{ width: "100%", height: "100%" }}
@@ -230,7 +276,7 @@ function Dashboard() {
           <Plot
             data={[
               {
-                name: "Overall network",
+                name: "",
                 type: "scatter",
                 mode: "lines+markers",
                 line: {
@@ -239,6 +285,7 @@ function Dashboard() {
                 x: overallNetworthData.map((entry) => entry.date),
                 y: overallNetworthData.map((entry) => entry.value),
                 marker: { color: "#262626" },
+                hovertemplate: "<b>Overall</b><br>%{y:,.0f} €<br>%{x|%b, %Y}",
               },
             ]}
             style={{ width: "100%", height: "100%" }}
@@ -275,7 +322,7 @@ function Dashboard() {
           <Plot
             data={[
               {
-                name: "Worst",
+                name: "",
                 type: "scatter",
                 mode: "lines+markers",
                 line: {
@@ -284,13 +331,14 @@ function Dashboard() {
                 x: worstData.values.map((entry) => entry.date),
                 y: worstData.values.map((entry) => entry.value),
                 marker: { color: "white" },
+                hovertemplate: "<b>Worst</b><br>%{y:,.0f} €<br>%{x|%b, %Y}",
               },
             ]}
             style={{ width: "100%", height: "100%" }}
             config={{ responsive: true }}
             layout={{
               title: {
-                text: "Worst",
+                text: `Worst - ${worstDataName}`,
                 font: {
                   family: "Hanken Grotesk",
                   color: "white",
@@ -339,7 +387,7 @@ function Dashboard() {
           <Plot
             data={[
               {
-                name: "Best",
+                name: "",
                 type: "scatter",
                 mode: "lines+markers",
                 line: {
@@ -348,13 +396,14 @@ function Dashboard() {
                 x: bestData.values.map((entry) => entry.date),
                 y: bestData.values.map((entry) => entry.value),
                 marker: { color: "#262626" },
+                hovertemplate: "<b>Best</b><br>%{y:,.0f} €<br>%{x|%b, %Y}",
               },
             ]}
             style={{ width: "100%", height: "100%" }}
             config={{ responsive: true }}
             layout={{
               title: {
-                text: "Best",
+                text: `Best - ${bestDataName}`,
                 font: {
                   family: "Hanken Grotesk",
                   color: "#262626",
