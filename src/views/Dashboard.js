@@ -29,6 +29,7 @@ function Dashboard() {
             ]}
             style={{ width: "100%", height: "100%" }}
             config={{ responsive: true }}
+            layout={{ title: "All assets" }}
           />
         </div>
         <div className="dashboard-rectangle-grid-container">
@@ -44,6 +45,7 @@ function Dashboard() {
             ]}
             style={{ width: "100%", height: "100%" }}
             config={{ responsive: true }}
+            layout={{ title: "Complete Networth" }}
           />
         </div>
         <div className="dashboard-small-square-grid-container-left">
@@ -59,6 +61,7 @@ function Dashboard() {
             ]}
             style={{ width: "100%", height: "100%" }}
             config={{ responsive: true }}
+            layout={{ title: "Winner" }}
           />
         </div>
         <div className="dashboard-small-square-grid-container-right">
@@ -74,6 +77,7 @@ function Dashboard() {
             ]}
             style={{ width: "100%", height: "100%" }}
             config={{ responsive: true }}
+            layout={{ title: "Loser" }}
           />
         </div>
       </div>
