@@ -299,7 +299,7 @@ function Dashboard() {
                   size: 25,
                 },
                 xref: "x",
-                x: 0.08,
+                x: 0.065,
               },
               yaxis: {
                 tickfont: {
@@ -345,7 +345,7 @@ function Dashboard() {
                   size: 25,
                 },
                 xref: "x",
-                x: 0.15,
+                x: 0.12,
               },
               annotations: [
                 {
@@ -353,8 +353,8 @@ function Dashboard() {
                   showarrow: false,
                   xref: "paper",
                   yref: "paper",
-                  x: -0.1,
-                  y: -0.35,
+                  x: -0.2,
+                  y: -0.3,
                   xanchor: "left",
                   yanchor: "bottom",
                   font: {
@@ -410,7 +410,7 @@ function Dashboard() {
                   size: 25,
                 },
                 xref: "x",
-                x: 0.15,
+                x: 0.12,
               },
               annotations: [
                 {
