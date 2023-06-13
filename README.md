@@ -1,6 +1,6 @@
-# Netrack - A simple net worth tracking dashboard
+# Netrack - A simple personal net worth tracking dashboard
 
-This project is in active development. Documentation will follow in due time.
+This project is in active development. Complete documentation will follow in due time.
 
 ## About this project
 
