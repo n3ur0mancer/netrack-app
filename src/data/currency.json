@@ -1,38 +1,19 @@
 [
-    {
-      "currency": "EUR",
-      "values": [
-        { "month": "August", "year": 2022, "value": 20302 },
-        { "month": "September", "year": 2022, "value": 21541 },
-        { "month": "October", "year": 2022, "value": 22784 },
-        { "month": "November", "year": 2022, "value": 23897 },
-        { "month": "December", "year": 2022, "value": 25317 },
-        { "month": "January", "year": 2023, "value": 26953 },
-        { "month": "February", "year": 2023, "value": 28203 },
-        { "month": "March", "year": 2023, "value": 30134 },
-        { "month": "April", "year": 2023, "value": 31400 },
-        { "month": "May", "year": 2023, "value": 29748 },
-        { "month": "June", "year": 2023, "value": 26340 },
-        { "month": "July", "year": 2023, "value": 25534 }
-      ]
-    },
-
-    {
-      "currency": "USD",
-      "values": [
-        { "month": "January", "year": 2022, "value": 1.02 },
-        { "month": "February", "year": 2022, "value": 1.04 },
-        { "month": "March", "year": 2022, "value": 1.06 },
-        { "month": "April", "year": 2022, "value": 1.08 },
-        { "month": "May", "year": 2022, "value": 1.10 },
-        { "month": "June", "year": 2022, "value": 1.12 },
-        { "month": "July", "year": 2022, "value": 1.15 },
-        { "month": "August", "year": 2022, "value": 1.13 },
-        { "month": "September", "year": 2022, "value": 1.11 },
-        { "month": "October", "year": 2022, "value": 1.09 },
-        { "month": "November", "year": 2022, "value": 1.07 },
-        { "month": "December", "year": 2022, "value": 1.06 }
-      ]
-    }
-  ]
-  
+  {
+    "currency": "EUR",
+    "values": [
+      { "date": "2022-08-01", "value": 20302 },
+      { "date": "2022-09-01", "value": 21541 },
+      { "date": "2022-10-01", "value": 22784 },
+      { "date": "2022-11-01", "value": 23897 },
+      { "date": "2022-12-01", "value": 25317 },
+      { "date": "2023-01-01", "value": 26953 },
+      { "date": "2023-02-01", "value": 28203 },
+      { "date": "2023-03-01", "value": 28134 },
+      { "date": "2023-04-01", "value": 28400 },
+      { "date": "2023-05-01", "value": 27748 },
+      { "date": "2023-06-01", "value": 26340 },
+      { "date": "2023-07-01", "value": 25534 }
+    ]
+  }
+]
