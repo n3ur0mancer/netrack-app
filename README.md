@@ -1,12 +1,14 @@
 # Netrack - A simple personal net worth tracking dashboard
 
-This project is in active development. Complete documentation will follow in due time.
+Just a fun little react & plotly project on the side.
 
 ## About this project
 
-This GitHub repository is a small overview dashboard designed to track personal net worth. It provides an interface to monitor various asset types, including currency, commodities, real estate, stocks, and tangible assets. Currently, the project is intended to be run locally, serving as a personal curiosity project for exploring the capabilities of Plotly.js.
+This GitHub repository is a small overview dashboard designed to track personal net worth. It provides an interface to monitor various asset types, including currency, commodities, stocks, and tangible assets. Currently, the project is intended to be run locally, serving as a personal curiosity project for exploring the capabilities of Plotly.js and CSS grid.
 
 To update the asset values displayed on the dashboard, you can modify the data located in the /src/data directory.
+
+The overall net worth is calculated automatically, as are the worst and best performing assets types.
 
 ## Available Scripts
 
